@@ -11,7 +11,6 @@ const Cart = () => {
     window.localStorage.getItem("loginDetails")
   );
 
-  const resId = loggedInDetails.userId;
   const uuidKey = loggedInDetails.uuid;
 
   const getAllCartItems = () => {

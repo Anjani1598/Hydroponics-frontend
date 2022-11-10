@@ -5,14 +5,14 @@ import Card from "react-bootstrap/Card";
 
 const ItemCard = ({categoryId, cost, itemId, itemName, itemThumbnail }) => {
 
-    const loggedInDetails = JSON.parse(
+   
+
+    const addItemToCartHandler = () => {
+      const loggedInDetails = JSON.parse(
         window.localStorage.getItem("loginDetails")
       );
     
-      const resId = loggedInDetails.userId;
       const uuidKey = loggedInDetails.uuid;
-
-    const addItemToCartHandler = () => {
 
         return axios.post(`http://localhost:8881/cart?itemId=${itemId}&key=${uuidKey}
         `).then((response) => response.data);
@@ -20,6 +20,7 @@ const ItemCard = ({categoryId, cost, itemId, itemName, itemThumbnail }) => {
       }
     
       const addItemToCart = (id) => {
+        
 
         const loggedInDetails = null || JSON.parse(
             window.localStorage.getItem("loginDetails")
@@ -29,8 +30,7 @@ const ItemCard = ({categoryId, cost, itemId, itemName, itemThumbnail }) => {
             window.location.href="/login"
           }
         
-          const resId = loggedInDetails.userId;
-          const uuidKey = loggedInDetails.uuid;
+         
         
     
         

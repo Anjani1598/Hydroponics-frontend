@@ -7,7 +7,6 @@ import axios from "axios";
 import InputGroup from "react-bootstrap/InputGroup";
 
 const RegisterForm = (props) => {
-  const { isUser, setIsuser } = props;
 
  
   const [firstName, setFirstName] = useState("");

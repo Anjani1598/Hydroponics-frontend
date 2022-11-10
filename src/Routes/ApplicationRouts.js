@@ -1,5 +1,4 @@
 import React from 'react'
-import Cart from '../Components/Cart'
 import { Routes, Route } from "react-router-dom";
 import ItemPage from '../Pages/ItemPage';
 import HomePage from '../Pages/HomePage';
