@@ -21,10 +21,7 @@ const AquaponicsSystem = () => {
          
       }, []);
  
-    const itemName = "Grow System";
-    const itemThumbnail =
-      "https://hydrilla.in/store/skin/frontend/tv_bigboom_package/tv_bigboom2/images/systems/hydroponics-190plants-pyramid-system.jpg";
-  
+    
     return (
       <>
         <div style={{ fontSize: "0.5rem" }}>

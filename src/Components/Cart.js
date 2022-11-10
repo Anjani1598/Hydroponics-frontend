@@ -111,8 +111,9 @@ const Cart = () => {
 
 
   useEffect(() => {
-    getAllItems();
-  }, [renders]);
+    getAllCartItems();
+    
+  },[renders,uuidKey]);
   return (
     <div style={{ margin: "60px" }}>
       <Table striped bordered hover>
